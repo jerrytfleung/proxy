@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package proxy;
+
+service Proxy {
+  rpc Subscribe(SubscribeRequest) returns (stream Message) {}
+}
+
+message SubscribeRequest {
+}
+
+message Message {
+  string data = 1;
+}
