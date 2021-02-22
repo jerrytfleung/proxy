@@ -4,6 +4,7 @@
 #include <mutex>
 #include <queue>
 #include <string>
+#include <condition_variable>
 
 #include <grpcpp/grpcpp.h>
 #include <grpc/support/log.h>
